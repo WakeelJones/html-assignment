@@ -26,12 +26,6 @@ header{
     background-position: center;
 }
 
-.logo img{
-    float: left;
-    width: 100px;
-    height: auto;
-}
-
 ul{
     list-style: none;
     float: right;
@@ -50,7 +44,6 @@ ul li a{
     padding: 5px 20px;
     border: 1px solid transparent;
     transition: 0.6s ease;
-    border-radius: 10px;
 }
 
 ul li a:hover{
@@ -63,72 +56,74 @@ ul li.active a{
     color: black;
 }
 
-main{
-    max-width: 1200px;
-    margin: auto;
-}
-
-.title{
-    text-align: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-}
-
-.title span{
-    text-transform: uppercase;
-    display: block;
-}
-
-.text1{
-    color: var(--primary-color);
-    font-size: 60px;
-    font-weight: 700;
-    letter-spacing: 8px;
-    margin-bottom: 20px;
-    position: relative;
-    animation: text 3s 1;
-}
-
-.text2{
-    font-size: 30px;
-    color: var(--text-color);
-}
-
-.button{
-    position: absolute;
-    top: 70%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-}
-
-.btn{
-    border: 1px solid transparent;
-    padding: 10px 30px;
+.site-title{
+    float: left;
+    height: auto;
+    font-size: 34px;
+    margin-top: 25px;
+    margin-left: 40px;
     color: var(--text-color);
     font-family: var(--anton);
-    text-decoration: none;
-    transition: 0.6s ease;
-    border-radius: 10px;
 }
 
-.btn:hover{
-    background-color: var(--text-color);
-    color: black;
+.logo img{
+    float: left;
+    width: 100px;
+    height: auto;
 }
 
-@keyframes text{
-    0%{
-        color: black;
-        margin-bottom: -40px;
-    }
-    30%{
-        letter-spacing: 25px;
-        margin-bottom: -40px;
-    }
-    85%{
-        letter-spacing: 8px;
-        margin-bottom: -40px;
-    }
+.contact-section h2{
+    text-align: center;
+    color: var(--text-color);
+   
+}
+
+.border{
+    width: 100px;
+    height: 10px;
+    background: #34495e;
+    margin: 40px auto;
+}
+.contact-form{
+    max-width: 600px;
+    margin: auto;
+    padding: 0 10px;
+    overflow: hidden;
+}
+.contact-form-text{
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 16px 0;
+    border: 0;
+    background: #111;
+    padding: 20px 40px;
+    outline: none;
+    color: white;
+    transition: 0.5s ease;
+}
+
+.contact-form-text:focus{
+    box-shadow: 0 0 10px 4px var(--text-color);
+}
+
+textarea .contact-form-text{
+    resize: none;
+    height: 120px;
+    font-family: var(--anton);
+}
+
+.contact-form-btn{
+    float: right;
+    border: 0;
+    background: #34495e;
+    color: white;
+    padding: 12px 50px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.contact-form-btn:hover{
+    background: var(--text-color);
 }
