@@ -68,6 +68,36 @@ main{
     margin: auto;
 }
 
+
+@keyframes text{
+    0%{
+        color: black;
+        margin-bottom: -40px;
+    }
+    30%{
+        letter-spacing: 25px;
+        margin-bottom: -40px;
+    }
+    85%{
+        letter-spacing: 6px;
+        margin-bottom: -40px;
+    }
+}
+
+main{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+main{
+    background-image: url(./background.jpg);
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+
 .card-container1{
     width: 270px;
     height: 310px;
@@ -140,6 +170,7 @@ main{
     left: 50%;
     transform: translate(-50%,-50%);
     box-shadow: 0px 1px 10px 1px #000;
+    
 }
 
 .upper-container2{
@@ -200,6 +231,7 @@ main{
     left: 80%;
     transform: translate(-50%,-50%);
     box-shadow: 0px 1px 10px 1px #000;
+    
 }
 
 .upper-container3{
@@ -248,48 +280,6 @@ main{
     font-size: 16px;
     color: gray;
     margin-bottom: 20px;
-}
-
-.kb-btn{
-    text-decoration: none;
-    color: var(--text-color);
-    padding: 5px 20px;
-    border: 1px solid transparent;
-    transition: 0.6s ease;
-    border-radius: 10px;
-}
-
-.kb-btn:hover{
-    background-color: var(--text-color);
-    color: black;
-}
-
-.avb-btn{
-    text-decoration: none;
-    color: var(--text-color);
-    padding: 5px 20px;
-    border: 1px solid transparent;
-    transition: 0.6s ease;
-    border-radius: 10px;
-}
-
-.avb-btn:hover{
-    background-color: var(--text-color);
-    color: black;
-}
-
-.nr-btn{
-    text-decoration: none;
-    color: var(--text-color);
-    padding: 5px 20px;
-    border: 1px solid transparent;
-    transition: 0.6s ease;
-    border-radius: 10px;
-}
-
-.nr-btn:hover{
-    background-color: var(--text-color);
-    color: black;
 }
 
 .footer-section{
@@ -345,4 +335,14 @@ main{
     padding: 5px;
 }
 
+@media (max-width:900px) {
+  .logo {
+    width: 100%;
+    text-align: center;
+    padding: 4% 4%;
+}
 
+.container .dropdown-toggle,
+.container .dropdown-item{
+    font-size: 0.7em;
+}
