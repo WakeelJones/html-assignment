@@ -132,3 +132,10 @@ main{
         margin-bottom: -40px;
     }
 }
+
+@media (max-width:900px) {
+  .logo {
+    width: 100%;
+    text-align: center;
+    padding: 4% 4%;
+}

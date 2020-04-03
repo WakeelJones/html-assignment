@@ -69,6 +69,30 @@ main{
 }
 
 
+.button{
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.btn{
+    border: 1px solid transparent;
+    padding: 10px 30px;
+    color: var(--text-color);
+    font-family: var(--anton);
+    text-decoration: none;
+    transition: 0.6s ease;
+    border-radius: 10px;
+}
+
+.btn:hover{
+    background-color: var(--text-color);
+    color: black;
+}
+
+
+
 @keyframes text{
     0%{
         color: black;
@@ -81,22 +105,8 @@ main{
     85%{
         letter-spacing: 6px;
         margin-bottom: -40px;
-    }
-}
-
-main{
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-    list-style: none;
-}
-
-main{
-    background-image: url(./background.jpg);
-    height: 100vh;
-    background-position: center;
-    background-size: cover;
-}
+     }
+} 
 
 .card-container1{
     width: 270px;
@@ -184,7 +194,6 @@ main{
     width: 120px;
     height: 120px;
     border-radius: 50%;
-    
     transform: translate(80px, 100px);
 }
 
@@ -262,6 +271,8 @@ main{
     padding: 20px;
     padding-top: 40px;
     text-align: center;
+    position: relative;
+    
 }
 
 .lower-container3 h3, h4{
@@ -290,6 +301,18 @@ main{
     box-sizing: border-box;
     background-color: var(--text-color);
     height: 190px;
+}
+
+
+
+.footer-section{
+    width: 98.7vw;
+    display: block;
+    overflow: hidden;
+    padding: 30px 0;
+    box-sizing: border-box;
+    background-color: var(--text-color);
+    height: 180px;
 }
 
 .inner-footer .logo-container{
@@ -340,9 +363,4 @@ main{
     width: 100%;
     text-align: center;
     padding: 4% 4%;
-}
-
-.container .dropdown-toggle,
-.container .dropdown-item{
-    font-size: 0.7em;
 }
